@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "title": "Python Crash Course",
+    "author": "Eric Matthes",
+    "description": "Hands-on introduction to Python with practical projects (games, web apps, APIs).",
+    "level": "Beginner",
+    "topics_covered": ["Python basics", "Files", "Testing", "Web APIs", "Deployment"],
+    "why_read": "Fast practical learning and projects you can show in portfolio."
+  },
+  {
+    "id": 2,
+    "title": "Automate the Boring Stuff with Python",
+    "author": "Al Sweigart",
+    "description": "Practical Python for automating everyday tasks — great for beginners.",
+    "level": "Beginner",
+    "topics_covered": ["String manipulation", "File automation", "Web scraping", "Excel/CSV"],
+    "why_read": "Teaches real-world automation skills useful in backend scripting and tooling."
+  },
+  {
+    "id": 3,
+    "title": "Fluent Python (selected chapters)",
+    "author": "Luciano Ramalho",
+    "description": "Deep dive into Pythonic patterns, data model, and advanced language features.",
+    "level": "Intermediate",
+    "topics_covered": ["Data model", "Iterators", "Generators", "Coroutines", "Decorators"],
+    "why_read": "Once basics are done, helps write cleaner, idiomatic Python — valued by employers."
+  },
+  {
+    "id": 4,
+    "title": "Building APIs with FastAPI",
+    "author": "Antonio Melé (or similar FastAPI tutorial/book)",
+    "description": "Focused resource on building modern Python APIs using FastAPI (auth, docs, deployment).",
+    "level": "Beginner–Intermediate",
+    "topics_covered": ["FastAPI basics", "Pydantic", "JWT auth", "Async endpoints", "Deployment"],
+    "why_read": "Directly applicable to backend internships that expect API development skills."
+  },
+  {
+    "id": 5,
+    "title": "Designing Data-Intensive Applications (selected parts)",
+    "author": "Martin Kleppmann",
+    "description": "High-level concepts of databases, scaling, and reliable systems (read relevant chapters).",
+    "level": "Intermediate–Advanced",
+    "topics_covered": ["Storage engines", "Replication", "Indexing", "Consistency", "Scalability"],
+    "why_read": "Gives important system-design understanding for backend roles (read selectively)."
+  }
+]
