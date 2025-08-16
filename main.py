@@ -37,3 +37,26 @@ def get_book(book_id: int):
         if book["id"] == book_id:
             return {"book": book}
     raise HTTPException(status_code=404, detail="Book not found")
+
+#Start pydantic and post request
+from pydantic import BaseModel
+
+class Book(BaseModel):
+    id: int
+    title: str
+    auther: str
+
+Books_Local_DB = []
+
+@app.post("/books/local")
+def add_book(book: Book):
+    Books_Local_DB.append(book)
+    return {
+        "message": "Book added successfully",
+        "book": book
+    }
+@app.get("/books/local/Show")
+def get_local_books():
+    if not Books_Local_DB:
+        return {"message": "No books found in local database"}
+    return {"books": Books_Local_DB}
