@@ -38,3 +38,11 @@ def update_profile(profile_id: int, profile: UserProfile):
             database[i] = profile.dict()
             return {"message": "Profile updated successfully", "profile": profile}
     raise HTTPException(status_code=404, detail="Profile not found")
+
+@app.delete("/profiles/{profile_id}")
+def delete_profile(profile_id: int):
+    for i, profile in enumerate(database):
+        if profile["id"] == profile_id:
+            delete_profile = database.pop(i)
+            return {"message": "Profile deleted successfully", "profile": delete_profile}
+    raise HTTPException(status_code=404, detail="Profile not found")
